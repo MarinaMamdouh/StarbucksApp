@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F84C3354284BE0DE00A50712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3353284BE0DE00A50712 /* AppDelegate.swift */; };
-		F84C3356284BE0DE00A50712 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3355284BE0DE00A50712 /* SceneDelegate.swift */; };
 		F84C3358284BE0DE00A50712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3357284BE0DE00A50712 /* ViewController.swift */; };
-		F84C335B284BE0DE00A50712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84C3359284BE0DE00A50712 /* Main.storyboard */; };
 		F84C335D284BE0E100A50712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84C335C284BE0E100A50712 /* Assets.xcassets */; };
 		F84C3360284BE0E100A50712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84C335E284BE0E100A50712 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		F84C3350284BE0DE00A50712 /* StarbucksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarbucksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84C3353284BE0DE00A50712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F84C3355284BE0DE00A50712 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F84C3357284BE0DE00A50712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F84C335A284BE0DE00A50712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F84C335C284BE0E100A50712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F84C335F284BE0E100A50712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F84C3361284BE0E100A50712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,21 @@
 		F84C3352284BE0DE00A50712 /* StarbucksApp */ = {
 			isa = PBXGroup;
 			children = (
+				F84C3367284BE20500A50712 /* Files */,
 				F84C3353284BE0DE00A50712 /* AppDelegate.swift */,
-				F84C3355284BE0DE00A50712 /* SceneDelegate.swift */,
 				F84C3357284BE0DE00A50712 /* ViewController.swift */,
-				F84C3359284BE0DE00A50712 /* Main.storyboard */,
+			);
+			path = StarbucksApp;
+			sourceTree = "<group>";
+		};
+		F84C3367284BE20500A50712 /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				F84C335C284BE0E100A50712 /* Assets.xcassets */,
 				F84C335E284BE0E100A50712 /* LaunchScreen.storyboard */,
 				F84C3361284BE0E100A50712 /* Info.plist */,
 			);
-			path = StarbucksApp;
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +129,6 @@
 			files = (
 				F84C3360284BE0E100A50712 /* LaunchScreen.storyboard in Resources */,
 				F84C335D284BE0E100A50712 /* Assets.xcassets in Resources */,
-				F84C335B284BE0DE00A50712 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +141,12 @@
 			files = (
 				F84C3358284BE0DE00A50712 /* ViewController.swift in Sources */,
 				F84C3354284BE0DE00A50712 /* AppDelegate.swift in Sources */,
-				F84C3356284BE0DE00A50712 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F84C3359284BE0DE00A50712 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F84C335A284BE0DE00A50712 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F84C335E284BE0E100A50712 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +284,9 @@
 				INFOPLIST_FILE = StarbucksApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +312,9 @@
 				INFOPLIST_FILE = StarbucksApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
