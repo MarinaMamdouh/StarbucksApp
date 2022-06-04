@@ -16,10 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
-        
+        // Create our main ViewControllers with their own navigationControllers
+        let home = UINavigationController(rootViewController: HomeViewController())
+        let scan = UINavigationController(rootViewController: ScanViewController())
+        let order = UINavigationController(rootViewController: OrderViewController())
+        let gift = UINavigationController(rootViewController: GiftViewController())
+        let store = UINavigationController(rootViewController: StoreViewController())
         // create our main Tab bar controller and set it as our app root view controller
         let tabBarController =  UITabBarController()
-        tabBarController.viewControllers = [HomeViewController(), ScanViewController(), OrderViewController(), GiftViewController(), StoreViewController()]
+        tabBarController.viewControllers = [home, scan, order, gift, store]
         window?.rootViewController = tabBarController
         
         return true
