@@ -12,6 +12,7 @@ struct LocalizedKeys{
     static let scanTitleKey = "Scan"
     static let orderTitleKey = "Order"
     static let giftTitleKey = "Gift"
+    static let storeTitleKey = "Store"
 }
 
 struct Images{
@@ -19,4 +20,5 @@ struct Images{
     static let scanTabBarImageName = "qrcode"
     static let orderTabBarImageName = "arrow.up.bin.fill"
     static let giftTabBarImageName = "gift.fill"
+    static let storeTabBarImageName = "location.fill"
 }

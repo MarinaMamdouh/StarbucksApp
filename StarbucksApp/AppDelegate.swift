@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // create our main Tab bar controller and set it as our app root view controller
         let tabBarController =  UITabBarController()
-        tabBarController.viewControllers = [HomeViewController(), ScanViewController(), OrderViewController(), GiftViewController()]
+        tabBarController.viewControllers = [HomeViewController(), ScanViewController(), OrderViewController(), GiftViewController(), StoreViewController()]
         window?.rootViewController = tabBarController
         
         return true
