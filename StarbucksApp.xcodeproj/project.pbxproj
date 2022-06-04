@@ -68,19 +68,19 @@
 		F84C3352284BE0DE00A50712 /* StarbucksApp */ = {
 			isa = PBXGroup;
 			children = (
-				F84C3367284BE20500A50712 /* Files */,
+				F84C337C284BED0E00A50712 /* Store */,
+				F84C337B284BED0500A50712 /* Gift */,
+				F84C337A284BECFF00A50712 /* Order */,
+				F84C3379284BECF400A50712 /* Scan */,
+				F84C3378284BECED00A50712 /* Home */,
+				F84C3367284BE20500A50712 /* Helpers */,
 				F84C3353284BE0DE00A50712 /* AppDelegate.swift */,
 				F84C336E284BE90400A50712 /* StarBucksViewController.swift */,
-				F84C3357284BE0DE00A50712 /* HomeViewController.swift */,
-				F84C3370284BE9D900A50712 /* ScanViewController.swift */,
-				F84C3372284BEB1000A50712 /* OrderViewController.swift */,
-				F84C3374284BEB3C00A50712 /* GiftViewController.swift */,
-				F84C3376284BEC6B00A50712 /* StoreViewController.swift */,
 			);
 			path = StarbucksApp;
 			sourceTree = "<group>";
 		};
-		F84C3367284BE20500A50712 /* Files */ = {
+		F84C3367284BE20500A50712 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				F84C336C284BE69E00A50712 /* Constants.swift */,
@@ -90,7 +90,47 @@
 				F84C336A284BE50800A50712 /* LocalizedString.swift */,
 				F84C3361284BE0E100A50712 /* Info.plist */,
 			);
-			path = Files;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F84C3378284BECED00A50712 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F84C3357284BE0DE00A50712 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F84C3379284BECF400A50712 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				F84C3370284BE9D900A50712 /* ScanViewController.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		F84C337A284BECFF00A50712 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				F84C3372284BEB1000A50712 /* OrderViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		F84C337B284BED0500A50712 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				F84C3374284BEB3C00A50712 /* GiftViewController.swift */,
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		F84C337C284BED0E00A50712 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F84C3376284BEC6B00A50712 /* StoreViewController.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
