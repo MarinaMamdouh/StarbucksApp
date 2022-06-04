@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F84C3354284BE0DE00A50712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3353284BE0DE00A50712 /* AppDelegate.swift */; };
-		F84C3358284BE0DE00A50712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3357284BE0DE00A50712 /* ViewController.swift */; };
+		F84C3358284BE0DE00A50712 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3357284BE0DE00A50712 /* HomeViewController.swift */; };
 		F84C335D284BE0E100A50712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84C335C284BE0E100A50712 /* Assets.xcassets */; };
 		F84C3360284BE0E100A50712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84C335E284BE0E100A50712 /* LaunchScreen.storyboard */; };
 		F84C3369284BE4D000A50712 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F84C3368284BE4D000A50712 /* Localizable.strings */; };
 		F84C336B284BE50800A50712 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C336A284BE50800A50712 /* LocalizedString.swift */; };
 		F84C336D284BE69E00A50712 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C336C284BE69E00A50712 /* Constants.swift */; };
+		F84C336F284BE90400A50712 /* StarBucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C336E284BE90400A50712 /* StarBucksViewController.swift */; };
+		F84C3371284BE9D900A50712 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3370284BE9D900A50712 /* ScanViewController.swift */; };
+		F84C3373284BEB1000A50712 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3372284BEB1000A50712 /* OrderViewController.swift */; };
+		F84C3375284BEB3C00A50712 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3374284BEB3C00A50712 /* GiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F84C3350284BE0DE00A50712 /* StarbucksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarbucksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84C3353284BE0DE00A50712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F84C3357284BE0DE00A50712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F84C3357284BE0DE00A50712 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F84C335C284BE0E100A50712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F84C335F284BE0E100A50712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F84C3361284BE0E100A50712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F84C3368284BE4D000A50712 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F84C336A284BE50800A50712 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		F84C336C284BE69E00A50712 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F84C336E284BE90400A50712 /* StarBucksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarBucksViewController.swift; sourceTree = "<group>"; };
+		F84C3370284BE9D900A50712 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		F84C3372284BEB1000A50712 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		F84C3374284BEB3C00A50712 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +50,6 @@
 		F84C3347284BE0DE00A50712 = {
 			isa = PBXGroup;
 			children = (
-				F84C336C284BE69E00A50712 /* Constants.swift */,
 				F84C3352284BE0DE00A50712 /* StarbucksApp */,
 				F84C3351284BE0DE00A50712 /* Products */,
 			);
@@ -61,7 +68,11 @@
 			children = (
 				F84C3367284BE20500A50712 /* Files */,
 				F84C3353284BE0DE00A50712 /* AppDelegate.swift */,
-				F84C3357284BE0DE00A50712 /* ViewController.swift */,
+				F84C336E284BE90400A50712 /* StarBucksViewController.swift */,
+				F84C3357284BE0DE00A50712 /* HomeViewController.swift */,
+				F84C3370284BE9D900A50712 /* ScanViewController.swift */,
+				F84C3372284BEB1000A50712 /* OrderViewController.swift */,
+				F84C3374284BEB3C00A50712 /* GiftViewController.swift */,
 			);
 			path = StarbucksApp;
 			sourceTree = "<group>";
@@ -69,6 +80,7 @@
 		F84C3367284BE20500A50712 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				F84C336C284BE69E00A50712 /* Constants.swift */,
 				F84C335C284BE0E100A50712 /* Assets.xcassets */,
 				F84C3368284BE4D000A50712 /* Localizable.strings */,
 				F84C335E284BE0E100A50712 /* LaunchScreen.storyboard */,
@@ -149,10 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F84C3358284BE0DE00A50712 /* ViewController.swift in Sources */,
+				F84C336F284BE90400A50712 /* StarBucksViewController.swift in Sources */,
+				F84C3358284BE0DE00A50712 /* HomeViewController.swift in Sources */,
 				F84C3354284BE0DE00A50712 /* AppDelegate.swift in Sources */,
+				F84C3373284BEB1000A50712 /* OrderViewController.swift in Sources */,
+				F84C3375284BEB3C00A50712 /* GiftViewController.swift in Sources */,
 				F84C336B284BE50800A50712 /* LocalizedString.swift in Sources */,
 				F84C336D284BE69E00A50712 /* Constants.swift in Sources */,
+				F84C3371284BE9D900A50712 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
