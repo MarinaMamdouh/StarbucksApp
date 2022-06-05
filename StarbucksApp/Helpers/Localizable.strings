@@ -10,3 +10,5 @@
 "Scan" = "Scan";
 "Order" = "Order";
 "Gift" = "Gift";
+"GreetingHeader" = "Good Afternoon, * <3";
+"Inbox" = "Inbox";

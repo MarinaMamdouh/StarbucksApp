@@ -19,6 +19,8 @@
 		F84C3373284BEB1000A50712 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3372284BEB1000A50712 /* OrderViewController.swift */; };
 		F84C3375284BEB3C00A50712 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3374284BEB3C00A50712 /* GiftViewController.swift */; };
 		F84C3377284BEC6B00A50712 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C3376284BEC6B00A50712 /* StoreViewController.swift */; };
+		F84C337E284BFA3C00A50712 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C337D284BFA3C00A50712 /* Font+Extension.swift */; };
+		F8518713284CF8A8004C05E8 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8518712284CF8A8004C05E8 /* HomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F84C3372284BEB1000A50712 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		F84C3374284BEB3C00A50712 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		F84C3376284BEC6B00A50712 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		F84C337D284BFA3C00A50712 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		F8518712284CF8A8004C05E8 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		F84C3367284BE20500A50712 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F84C337D284BFA3C00A50712 /* Font+Extension.swift */,
 				F84C336C284BE69E00A50712 /* Constants.swift */,
 				F84C335C284BE0E100A50712 /* Assets.xcassets */,
 				F84C3368284BE4D000A50712 /* Localizable.strings */,
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				F84C3357284BE0DE00A50712 /* HomeViewController.swift */,
+				F8518712284CF8A8004C05E8 /* HomeHeaderView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 				F84C3373284BEB1000A50712 /* OrderViewController.swift in Sources */,
 				F84C3375284BEB3C00A50712 /* GiftViewController.swift in Sources */,
 				F84C3377284BEC6B00A50712 /* StoreViewController.swift in Sources */,
+				F8518713284CF8A8004C05E8 /* HomeHeaderView.swift in Sources */,
+				F84C337E284BFA3C00A50712 /* Font+Extension.swift in Sources */,
 				F84C336B284BE50800A50712 /* LocalizedString.swift in Sources */,
 				F84C336D284BE69E00A50712 /* Constants.swift in Sources */,
 				F84C3371284BE9D900A50712 /* ScanViewController.swift in Sources */,

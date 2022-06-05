@@ -13,6 +13,8 @@ struct LocalizedKeys{
     static let orderTitleKey = "Order"
     static let giftTitleKey = "Gift"
     static let storeTitleKey = "Store"
+    static let greetingKey = "GreetingHeader"
+    static let inboxKey = "Inbox"
 }
 
 struct Images{
