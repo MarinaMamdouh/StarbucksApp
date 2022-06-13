@@ -41,18 +41,9 @@ extension HomeViewController{
         headerView.translatesAutoresizingMaskIntoConstraints = false
         headerView.backgroundColor = .cyan
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-//        stackView.axis = .vertical
-//        stackView.distribution = .fillProportionally
-//        stackView.spacing = 0
-        
-        
     }
     
     func layout(){
-//        stackView.addArrangedSubview(headerView)
-//        stackView.addArrangedSubview(tableView)
         self.view.addSubview(headerView)
         self.view.addSubview(tableView)
         NSLayoutConstraint.activate([
