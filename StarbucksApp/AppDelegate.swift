@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // create our main Tab bar controller and set it as our app root view controller
         let tabBarController =  UITabBarController()
         tabBarController.viewControllers = [home, scan, order, gift, store]
+        tabBarController.tabBar.tintColor = .lightGreen
+        tabBarController.tabBar.isTranslucent = false
         window?.rootViewController = tabBarController
         
         return true

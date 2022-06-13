@@ -40,7 +40,6 @@ extension HomeViewController{
     func style(){
         headerView.setUser(name: userName)
         headerView.translatesAutoresizingMaskIntoConstraints = false
-        headerView.backgroundColor = .cyan
         tableView.translatesAutoresizingMaskIntoConstraints = false
     }
     

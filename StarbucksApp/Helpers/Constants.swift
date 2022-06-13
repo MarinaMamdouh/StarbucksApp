@@ -23,4 +23,5 @@ struct Images{
     static let orderTabBarImageName = "arrow.up.bin.fill"
     static let giftTabBarImageName = "gift.fill"
     static let storeTabBarImageName = "location.fill"
+    static let inboxImageName = "envelope"
 }
