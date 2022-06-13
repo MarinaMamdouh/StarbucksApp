@@ -25,6 +25,9 @@ class HomeHeaderView: UIView{
     
 }
 
+
+//// Auto Layout Methods
+
 extension HomeHeaderView{
     
     func setStyle(){

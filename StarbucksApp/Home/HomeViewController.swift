@@ -27,12 +27,13 @@ class HomeViewController: StarBucksViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //title = String(localizedKey: LocalizedKeys.homeTitleKey)
         setupTableView()
         style()
         layout()
     }
 }
+
+///// Auto Layout Methods
 
 extension HomeViewController{
     
@@ -58,6 +59,8 @@ extension HomeViewController{
     }
     
 }
+
+//// Table View Delegate Methods
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func setupTableView(){
