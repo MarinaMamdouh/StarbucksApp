@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         // Create our main ViewControllers with their own navigationControllers
-        let home = UINavigationController(rootViewController: HomeViewController())
+        let home =  HomeViewController()
         let scan = UINavigationController(rootViewController: ScanViewController())
         let order = UINavigationController(rootViewController: OrderViewController())
         let gift = UINavigationController(rootViewController: GiftViewController())

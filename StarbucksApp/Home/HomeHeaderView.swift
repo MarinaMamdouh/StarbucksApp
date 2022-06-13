@@ -10,7 +10,6 @@ import UIKit
 class HomeHeaderView: UIView{
     var greetingLabel = UILabel()
     var inboxButton = UIButton()
-    private var userName:String = ""
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,7 +29,7 @@ extension HomeHeaderView{
     
     func setStyle(){
         greetingLabel.translatesAutoresizingMaskIntoConstraints =  false
-        setUser(name: userName)
+        setUser(name: "")
         greetingLabel.numberOfLines = 0
         greetingLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         greetingLabel.lineBreakMode = .byWordWrapping
@@ -46,12 +45,13 @@ extension HomeHeaderView{
         addSubview(greetingLabel)
         addSubview(inboxButton)
         NSLayoutConstraint.activate([
-            greetingLabel.topAnchor.constraint(equalTo: self.topAnchor),
+            greetingLabel.topAnchor.constraint(equalToSystemSpacingBelow: self.topAnchor, multiplier: 1),
             greetingLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: self.leadingAnchor, multiplier: 1),
             greetingLabel.trailingAnchor.constraint(equalToSystemSpacingAfter: self.trailingAnchor, multiplier: 1),
             
-            inboxButton.topAnchor.constraint(equalTo: greetingLabel.bottomAnchor),
+            inboxButton.topAnchor.constraint(equalToSystemSpacingBelow: greetingLabel.bottomAnchor, multiplier: 2),
             inboxButton.leadingAnchor.constraint(equalToSystemSpacingAfter: self.leadingAnchor, multiplier: 2),
+            self.bottomAnchor.constraint(equalToSystemSpacingBelow: inboxButton.bottomAnchor, multiplier: 1)
         ])
         
     }
