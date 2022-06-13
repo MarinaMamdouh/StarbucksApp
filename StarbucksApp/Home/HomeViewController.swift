@@ -9,8 +9,8 @@ import UIKit
 
 class HomeViewController: StarBucksViewController {
     var headerView = HomeHeaderView()
-    var stackView = UIStackView()
     var tableView =  UITableView()
+    var headerViewTopConstraint: NSLayoutConstraint?
     var userName = "Marinaaaa<3"
     var cellId = "homeCell"
     let titles:[String] = [
@@ -47,8 +47,9 @@ extension HomeViewController{
     func layout(){
         self.view.addSubview(headerView)
         self.view.addSubview(tableView)
+        headerViewTopConstraint = headerView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            headerViewTopConstraint!,
             headerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             tableView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
@@ -62,7 +63,7 @@ extension HomeViewController{
 
 //// Table View Delegate Methods
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
+extension HomeViewController: UITableViewDataSource{
     func setupTableView(){
         tableView.delegate =  self
         tableView.dataSource =  self
@@ -83,11 +84,35 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    
+    
+    
+}
+
+
+///// MARK: - Animating ScrollView
+
+extension HomeViewController: UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
     }
     
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let y = scrollView.contentOffset.y
+        let labelHeight =  self.headerView.greetingLabel.frame.height
+        let isSwipingDown = y <= 0
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.headerView.greetingLabel.alpha =  isSwipingDown ? 1.0 : 0.0
+        }
+        let shouldDisappear = y > 30
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.3, delay: 0) { [weak self] in
+            self?.headerViewTopConstraint?.constant = shouldDisappear ? -labelHeight : 0
+            self?.view.layoutIfNeeded()
+        }
+
+    }
 }
 
 
